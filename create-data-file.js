@@ -8,11 +8,11 @@ async function createDataFile () {
   let allFiles = []
   const files = await $readdir('mods')
 
-  for (fileName of files) {
-    if (fileName !== 'data.json') {
-      const file = require(`./mods/${fileName}`)
+  for (const filename of files) {
+    if (filename !== 'data.json') {
+      const file = require(`./mods/${filename}`)
       allFiles = allFiles.concat({
-        name: fileName.replace('.json', ''),
+        name: filename.replace('.json', ''),
         versions: file
       })
     }

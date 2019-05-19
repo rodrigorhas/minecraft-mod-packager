@@ -1,3 +1,7 @@
 .vscode
 html_cache/
 scrapper/__pycache__/
+node_modules
+
+output/modpack*
+mods/

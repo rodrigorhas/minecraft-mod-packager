@@ -5,9 +5,9 @@ import scrapper.forge
 import scrapper.parser
 
 mods = [
-  'industrial-foregoing',
-  'actually-additions'
-  # 'falling-meteors-mod',
+  # 'industrial-foregoing',
+  # 'actually-additions'
+  'falling-meteors-mod',
   # 'not-enough-items-1-8',
   # 'applied-energistics-2',
   # 'veinminer',
@@ -33,7 +33,7 @@ mods = [
 ]
 
 def saveToFile (file_name, page):
-  Html_file= open(mod + '.html', "w")
+  Html_file= open(file_name + '.html', "w")
   Html_file.write(page.prettify())
   Html_file.close()
 

@@ -53,7 +53,7 @@ def get_file_table (html, current_page):
     file_url = anchor['href']
 
     page_files.append({
-      'fileName': file_name,
+      'filename': file_name,
       'url': file_url,
       'status': mod_status,
       'version': mod_version

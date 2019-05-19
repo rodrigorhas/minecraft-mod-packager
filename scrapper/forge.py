@@ -36,8 +36,8 @@ def get_file_table (html, current_page):
     file_url = anchor['href']
 
     page_files.append({
-      'fileName': file_name,
-      'url': file_url,
+      'filename': file_name,
+      'url': file_url + '/download',
       'status': mod_status,
       'version': mod_version
     })
